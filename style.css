@@ -278,6 +278,57 @@ body::before {
   animation: fadeInUp 1s ease-out;
 }
 
+/* Hero Avatar with Coquette bow decoration */
+.hero-avatar-wrapper {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInUp 1s ease-out 0.1s both;
+}
+
+.hero-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--white);
+  box-shadow: 
+    0 8px 30px rgba(212, 117, 139, 0.18),
+    0 0 0 2px var(--pink-soft);
+  transition: var(--transition);
+  background: var(--pink-light);
+}
+
+.hero-avatar-wrapper:hover .hero-avatar {
+  transform: scale(1.05);
+  box-shadow: 
+    0 12px 40px rgba(212, 117, 139, 0.28),
+    0 0 0 3px var(--pink-primary);
+}
+
+.hero-avatar-bow {
+  position: absolute;
+  top: -12px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  fill: var(--pink-deep);
+  filter: drop-shadow(0 2px 6px rgba(212, 117, 139, 0.3));
+  transform: rotate(25deg);
+  transition: var(--transition);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hero-avatar-wrapper:hover .hero-avatar-bow {
+  transform: rotate(15deg) scale(1.15);
+  fill: var(--pink-primary);
+}
+
 .hero-greeting {
   font-family: var(--font-accent);
   font-size: clamp(1.8rem, 5vw, 3rem);
