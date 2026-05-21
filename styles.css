@@ -1,0 +1,425 @@
+/* Coquette portfolio — Vũ Thị Ngọc Hoan */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600&display=swap");
+
+:root {
+  --pink-light: #fff5f8;
+  --pink: #f8d7e3;
+  --pink-deep: #e8a4b8;
+  --rose: #d4849a;
+  --cream: #fffaf7;
+  --text: #5c4a52;
+  --text-soft: #8a737c;
+  --white: #ffffff;
+  --shadow: rgba(212, 132, 154, 0.18);
+  --ribbon: #f0c4d4;
+  --max: 920px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text);
+  background: var(--cream);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(248, 215, 227, 0.55), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 100%, rgba(240, 196, 212, 0.4), transparent);
+}
+
+/* Lace top border */
+body::before {
+  content: "";
+  display: block;
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--pink-deep) 0,
+    var(--pink-deep) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  opacity: 0.35;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  color: var(--rose);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  margin: 0 0 0.35rem;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--pink);
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.65rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--rose);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--pink-deep);
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
+li::marker {
+  color: var(--pink-deep);
+}
+
+/* Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 250, 247, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--pink);
+  box-shadow: 0 4px 24px var(--shadow);
+}
+
+.nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--rose);
+  text-decoration: none;
+}
+
+.brand:hover {
+  text-decoration: none;
+  color: var(--pink-deep);
+}
+
+.brand-icon {
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  display: block;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-soft);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--rose);
+  background: var(--pink-light);
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: var(--white);
+  background: linear-gradient(135deg, var(--pink-deep), var(--rose));
+  border-color: var(--pink-deep);
+  box-shadow: 0 2px 12px var(--shadow);
+}
+
+/* Main layout */
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2.5rem 1.5rem 2rem;
+  margin-bottom: 2rem;
+  background: var(--white);
+  border-radius: 24px;
+  border: 1px solid var(--pink);
+  box-shadow: 0 8px 32px var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  content: "♡";
+  position: absolute;
+  font-size: 1.5rem;
+  color: var(--pink);
+  opacity: 0.5;
+}
+
+.hero::before {
+  top: 1rem;
+  left: 1.25rem;
+}
+
+.hero::after {
+  bottom: 1rem;
+  right: 1.25rem;
+}
+
+.hero .subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text-soft);
+  margin: 0.5rem 0 0;
+}
+
+.hero .badge {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.35rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--rose);
+  background: var(--pink-light);
+  border-radius: 999px;
+  border: 1px dashed var(--pink-deep);
+}
+
+/* Cards */
+.card {
+  background: var(--white);
+  border-radius: 20px;
+  border: 1px solid var(--pink);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+.card-ribbon {
+  position: relative;
+  padding-top: 1.75rem;
+}
+
+.card-ribbon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 8px;
+  background: var(--ribbon);
+  border-radius: 0 0 6px 6px;
+}
+
+.grid-2 {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  margin-right: 0.35rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--rose);
+  background: var(--pink-light);
+  border-radius: 6px;
+}
+
+/* Week accordion */
+.week-block {
+  margin-bottom: 1rem;
+  border: 1px solid var(--pink);
+  border-radius: 16px;
+  background: var(--white);
+  overflow: hidden;
+  box-shadow: 0 2px 14px var(--shadow);
+}
+
+.week-block summary {
+  padding: 1rem 1.25rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--rose);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background: linear-gradient(90deg, var(--pink-light), var(--white));
+}
+
+.week-block summary::-webkit-details-marker {
+  display: none;
+}
+
+.week-block summary::after {
+  content: "＋";
+  font-size: 1rem;
+  color: var(--pink-deep);
+  transition: transform 0.2s;
+}
+
+.week-block[open] summary::after {
+  content: "－";
+}
+
+.week-body {
+  padding: 0 1.25rem 1.25rem;
+  border-top: 1px dashed var(--pink);
+}
+
+.week-body h4 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--pink-deep);
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.prompt-box {
+  background: var(--pink-light);
+  border-left: 3px solid var(--pink-deep);
+  padding: 0.85rem 1rem;
+  margin: 0.75rem 0;
+  border-radius: 0 12px 12px 0;
+  font-size: 0.92rem;
+}
+
+.principle-list {
+  list-style: none;
+  padding: 0;
+}
+
+.principle-list li {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  background: var(--pink-light);
+  border-radius: 12px;
+  border: 1px solid var(--pink);
+}
+
+.principle-list strong {
+  display: block;
+  color: var(--rose);
+  margin-bottom: 0.25rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--pink-light),
+    var(--pink-light) 8px,
+    var(--white) 8px,
+    var(--white) 16px
+  );
+  border: 2px dashed var(--pink);
+  border-radius: 14px;
+}
+
+.highlight-box {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: var(--pink-light);
+  border-radius: 14px;
+  border: 1px solid var(--pink);
+}
+
+.highlight-box .icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+footer.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  border-top: 1px solid var(--pink);
+  margin-top: 2rem;
+}
+
+footer.site-footer span {
+  color: var(--pink-deep);
+}
