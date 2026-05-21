@@ -46,8 +46,85 @@
     <p class="section-desc">Tổng hợp các bài tập xuyên suốt môn học "Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo" — nơi lý thuyết được biến thành thực hành.</p>
   </header>
 
+  <!-- WEEK TAB SELECTOR -->
+  <div class="week-selector-container fade-in">
+    <svg class="selector-side-bow selector-side-bow--left" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z" />
+      <ellipse cx="32" cy="22" rx="4" ry="5" />
+    </svg>
+    <ul class="week-tabs">
+      <li class="week-tab active" onclick="filterWeek(1, this)">
+        <svg class="tab-bow" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z" />
+          <ellipse cx="32" cy="22" rx="4" ry="5" />
+        </svg>
+        Tuần 1
+      </li>
+      <li class="week-tab" onclick="filterWeek(2, this)">
+        <svg class="tab-bow" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z" />
+          <ellipse cx="32" cy="22" rx="4" ry="5" />
+        </svg>
+        Tuần 2
+      </li>
+      <li class="week-tab" onclick="filterWeek(3, this)">
+        <svg class="tab-bow" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z" />
+          <ellipse cx="32" cy="22" rx="4" ry="5" />
+        </svg>
+        Tuần 3
+      </li>
+      <li class="week-tab" onclick="filterWeek(4, this)">
+        <svg class="tab-bow" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z" />
+          <ellipse cx="32" cy="22" rx="4" ry="5" />
+        </svg>
+        Tuần 4
+      </li>
+      <li class="week-tab" onclick="filterWeek(5, this)">
+        <svg class="tab-bow" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z" />
+          <ellipse cx="32" cy="22" rx="4" ry="5" />
+        </svg>
+        Tuần 5
+      </li>
+      <li class="week-tab" onclick="filterWeek(6, this)">
+        <svg class="tab-bow" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z" />
+          <ellipse cx="32" cy="22" rx="4" ry="5" />
+        </svg>
+        Tuần 6
+      </li>
+      <li class="week-tab" onclick="filterWeek(7, this)">
+        <svg class="tab-bow" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z" />
+          <ellipse cx="32" cy="22" rx="4" ry="5" />
+        </svg>
+        Tuần 7
+      </li>
+    </ul>
+    <svg class="selector-side-bow selector-side-bow--right" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z" />
+      <ellipse cx="32" cy="22" rx="4" ry="5" />
+    </svg>
+  </div>
+
+  <!-- PLACEHOLDER FOR EMPTY WEEKS -->
+  <section class="section" id="empty-week-placeholder" style="display: none;">
+    <div class="container">
+      <div class="placeholder-card">
+        <svg class="placeholder-icon" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z" />
+          <ellipse cx="32" cy="22" rx="4" ry="5" />
+        </svg>
+        <h3 class="placeholder-title" id="placeholder-title">Đang cập nhật</h3>
+        <p class="placeholder-text" id="placeholder-text">Nội dung bài tập đang được tổng hợp và số hóa. Hãy quay lại sau nhé! 🎀</p>
+      </div>
+    </div>
+  </section>
+
   <!-- TUẦN 6 -->
-  <section class="section" id="tuan6">
+  <section class="section week-content" id="tuan6" data-week="6">
     <div class="container">
       <div class="project-card fade-in">
         <div class="project-card-header">
@@ -167,7 +244,7 @@
   </section>
 
   <!-- TUẦN 7 -->
-  <section class="section section-alt" id="tuan7">
+  <section class="section section-alt week-content" id="tuan7" data-week="7">
     <div class="container">
       <div class="project-card fade-in">
         <div class="project-card-header">
@@ -257,6 +334,46 @@
         : 'Xem chi tiết <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>';
     }
 
+    // Week selector filtering logic
+    function filterWeek(week, btn, isInitialLoad = false) {
+      // Remove active class from all tabs
+      document.querySelectorAll('.week-tab').forEach(tab => tab.classList.remove('active'));
+      // Add active class to the clicked tab
+      btn.classList.add('active');
+
+      const placeholder = document.getElementById('empty-week-placeholder');
+      const placeholderTitle = document.getElementById('placeholder-title');
+      const placeholderText = document.getElementById('placeholder-text');
+      const contentSections = document.querySelectorAll('.week-content');
+
+      // Scroll smoothly back to selector area so view isn't cut off (skip on initial page load)
+      if (!isInitialLoad) {
+        const selectorContainer = document.querySelector('.week-selector-container');
+        if (selectorContainer) {
+          selectorContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+
+      if (week === 6 || week === 7) {
+        // Show corresponding week content, hide placeholder and other weeks
+        placeholder.style.display = 'none';
+        contentSections.forEach(sec => {
+          if (sec.getAttribute('data-week') == week) {
+            sec.style.display = 'block';
+            sec.classList.add('visible');
+          } else {
+            sec.style.display = 'none';
+          }
+        });
+      } else {
+        // Show placeholder for empty weeks (1-5), hide all content
+        contentSections.forEach(sec => sec.style.display = 'none');
+        placeholder.style.display = 'block';
+        placeholderTitle.textContent = `Tuần ${week} — Đang Cập Nhật`;
+        placeholderText.textContent = `Nội dung học tập và bài tập của Tuần ${week} đang được tổng hợp và số hóa. Hãy quay lại sau nhé! 🎀`;
+      }
+    }
+
     // Scroll animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -267,6 +384,14 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
     document.querySelectorAll('.fade-in, .stagger-children').forEach(el => observer.observe(el));
+
+    // Initialize state on page load (Default to Week 1, silent scroll)
+    document.addEventListener('DOMContentLoaded', () => {
+      const defaultActiveTab = document.querySelector('.week-tab.active');
+      if (defaultActiveTab) {
+        filterWeek(1, defaultActiveTab, true);
+      }
+    });
   </script>
 </body>
 </html>

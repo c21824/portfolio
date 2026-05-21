@@ -794,66 +794,180 @@ body::before {
 }
 
 /* ============================================
-   PRINCIPLES LIST
+   WEEKLY TAB SELECTOR
    ============================================ */
-.principles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.principle-item {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(244, 160, 181, 0.15);
-  border-radius: var(--radius-md);
-  padding: 24px 28px;
-  transition: var(--transition);
-  cursor: pointer;
+.week-selector-container {
   display: flex;
-  gap: 16px;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin: -20px auto 48px;
+  padding: 12px 52px; /* Increased padding to give absolute space for bows */
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(244, 160, 181, 0.2);
+  border-radius: 50px;
+  max-width: 950px;
+  width: calc(100% - 32px);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  z-index: 5;
 }
 
-.principle-item:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
-  border-color: var(--pink-soft);
+.week-tabs {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  padding: 4px;
+  width: 100%;
+  justify-content: center;
 }
 
-.principle-number {
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, var(--pink-light), var(--lavender));
-  border-radius: 14px;
+.week-tabs::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.week-tab {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 700;
+  gap: 6px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--muted-rose);
+  background: var(--white);
+  border: 1px solid rgba(244, 160, 181, 0.15);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+  box-shadow: 0 2px 8px rgba(74, 44, 61, 0.03);
+}
+
+.tab-bow {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  opacity: 0;
+  transform: scale(0) rotate(-15deg);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
+  flex-shrink: 0;
+}
+
+.week-tab:hover {
   color: var(--pink-deep);
+  background: var(--pink-light);
+  border-color: rgba(244, 160, 181, 0.3);
+  transform: translateY(-2px);
+}
+
+.week-tab:hover .tab-bow {
+  opacity: 0.5;
+  transform: scale(0.8) rotate(-5deg);
+}
+
+.week-tab.active {
+  color: var(--white);
+  background: linear-gradient(135deg, var(--pink-primary), var(--pink-deep));
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(244, 160, 181, 0.4);
+  transform: translateY(-1px);
+}
+
+.week-tab.active .tab-bow {
+  opacity: 1;
+  transform: scale(1.1) rotate(0deg);
+}
+
+/* Side decorative bows for menu - Absolute positioned to prevent layout overlap */
+.selector-side-bow {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  fill: var(--pink-soft);
+  opacity: 0.6;
+  pointer-events: none;
   transition: var(--transition);
 }
 
-.principle-item:hover .principle-number {
-  background: linear-gradient(135deg, var(--pink-primary), var(--pink-deep));
-  color: var(--white);
+.selector-side-bow--left {
+  left: 20px;
+  transform: translateY(-50%) rotate(-15deg);
 }
 
-.principle-title {
+.selector-side-bow--right {
+  right: 20px;
+  transform: translateY(-50%) rotate(15deg);
+}
+
+.week-selector-container:hover .selector-side-bow {
+  fill: var(--pink-primary);
+  opacity: 0.9;
+}
+
+.week-selector-container:hover .selector-side-bow--left {
+  transform: translateY(-50%) scale(1.15) rotate(-25deg);
+}
+
+.week-selector-container:hover .selector-side-bow--right {
+  transform: translateY(-50%) scale(1.15) rotate(25deg);
+}
+
+@media (max-width: 768px) {
+  .selector-side-bow {
+    display: none;
+  }
+  .week-selector-container {
+    padding: 10px 16px; /* Reduced mobile padding for more tab space */
+  }
+}
+
+/* Placeholder for empty weeks */
+.placeholder-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px dashed rgba(244, 160, 181, 0.4);
+  border-radius: var(--radius-md);
+  padding: 64px 32px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeInUp 0.6s ease-out;
+  box-shadow: var(--shadow-soft);
+}
+
+.placeholder-icon {
+  width: 64px;
+  height: 64px;
+  fill: var(--pink-primary);
+  margin-bottom: 20px;
+  filter: drop-shadow(0 2px 4px rgba(244, 160, 181, 0.2));
+  animation: heartBeat 2s ease-in-out infinite;
+}
+
+.placeholder-title {
   font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 600;
+  font-size: 1.4rem;
   color: var(--plum);
-  margin-bottom: 6px;
+  margin-bottom: 12px;
+  font-weight: 600;
 }
 
-.principle-text {
-  font-size: 0.9rem;
+.placeholder-text {
+  font-size: 0.95rem;
   color: var(--muted-rose);
-  line-height: 1.7;
+  font-style: italic;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
 }
 
 /* ============================================
