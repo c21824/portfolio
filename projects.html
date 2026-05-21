@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bài tập và dự án trong môn Nhập môn Công nghệ số - Portfolio của Vũ Thị Ngọc Hoan">
+  <title>Bài Tập | Ngọc Hoan Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <div class="floating-hearts">
+    <div class="heart">&#10084;</div>
+    <div class="heart">&#10084;</div>
+    <div class="heart">&#10084;</div>
+    <div class="heart">&#10084;</div>
+    <div class="heart">&#10084;</div>
+    <div class="heart">&#10084;</div>
+    <div class="heart">&#10084;</div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-brand">
+      <svg class="nav-bow" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z"/>
+        <ellipse cx="32" cy="22" rx="4" ry="5"/>
+      </svg>
+      Ngọc Hoan
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Giới thiệu</a></li>
+      <li><a href="projects.html" class="active">Bài tập</a></li>
+      <li><a href="summary.html">Tổng kết</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <span class="section-label">Hành trình học tập</span>
+    <h1 class="section-title">Bài Tập & Dự Án</h1>
+    <p class="section-desc">Tổng hợp các bài tập xuyên suốt môn học "Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo" — nơi lý thuyết được biến thành thực hành.</p>
+  </header>
+
+  <!-- TUẦN 6 -->
+  <section class="section" id="tuan6">
+    <div class="container">
+      <div class="project-card fade-in">
+        <div class="project-card-header">
+          <span class="project-week">Tuần 6</span>
+          <h2 class="project-title">AI trong Học thuật — Đạo đức & Trách nhiệm</h2>
+        </div>
+        <div class="project-card-body">
+
+          <!-- Topic 1 -->
+          <div class="project-topic">
+            <div class="topic-number">1</div>
+            <div class="topic-content">
+              <h4>Chính sách của ĐHQGHN về sử dụng AI</h4>
+              <p>Tìm hiểu định hướng và quy định của Đại học Quốc gia Hà Nội trong việc tích hợp AI vào giảng dạy.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <p>ĐHQGHN đã chủ động ban hành các quy định nhằm tích hợp và quản lý công nghệ AI. Từ năm học 2025-2026, học phần <strong>"Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo"</strong> (VNU1001, 3 tín chỉ) trở thành môn bắt buộc cho toàn bộ sinh viên năm nhất.</p>
+                  <p>Nguyên tắc cốt lõi: <strong>Trách nhiệm học thuật luôn thuộc về con người.</strong> AI không thể và không được coi là tác giả hay đồng tác giả của bất kỳ công trình nào.</p>
+                  <p><strong>Nhận định cá nhân:</strong> Chính sách thể hiện tầm nhìn đột phá khi biến AI từ mối đe dọa thành môn học bắt buộc. Tuy nhiên, thách thức lớn nhất nằm ở sự đồng bộ trong khâu chấm điểm và đánh giá.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Topic 2 -->
+          <div class="project-topic">
+            <div class="topic-number">2</div>
+            <div class="topic-content">
+              <h4>Quá trình sử dụng AI trong học tập</h4>
+              <p>Mô tả chi tiết các công cụ AI đã sử dụng, prompt đã áp dụng và quá trình chỉnh sửa đầu ra.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <p><strong>Công cụ đã sử dụng:</strong></p>
+                  <ul>
+                    <li><strong>Gemini, ChatGPT:</strong> Cấu trúc hóa ý tưởng, tóm tắt lý thuyết dược lý, dịch thuật ngữ chuyên ngành.</li>
+                    <li><strong>Perplexity AI:</strong> Tìm kiếm bằng chứng y học từ PubMed, ScienceDirect.</li>
+                  </ul>
+                  <p><strong>Ví dụ bài tiểu luận:</strong> "Phân tích tương tác thuốc giữa Clopidogrel và Omeprazole" — áp dụng quy trình prompt phân cấp với Role, Context, Task, Constraint.</p>
+                  <p><strong>Chỉnh sửa đầu ra:</strong> Phát hiện AI "bịa" tên thử nghiệm lâm sàng, điều chỉnh thuật ngữ chuyên ngành ("thuốc kích hoạt" → Prodrug), bổ sung khuyến cáo của Bộ Y tế Việt Nam.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Topic 3 -->
+          <div class="project-topic">
+            <div class="topic-number">3</div>
+            <div class="topic-content">
+              <h4>Vấn đề đạo đức khi sử dụng AI trong học thuật</h4>
+              <p>Phân tích ranh giới hỗ trợ hợp lý vs. gian lận, quyền sở hữu trí tuệ, và tác động đến kỹ năng.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <p><strong>Ranh giới hỗ trợ vs. gian lận:</strong> Hỗ trợ hợp lý là dùng AI để gợi mở ý tưởng, tối ưu cấu trúc. Gian lận bắt đầu khi ủy quyền hoàn toàn quyền tư duy cho máy tính.</p>
+                  <p><strong>Quyền sở hữu trí tuệ:</strong> Mọi đầu ra của AI là sự tái tổ hợp xác suất dựa trên chất xám của nhân loại. Khả năng kiểm chứng nguồn gốc dữ liệu bị triệt tiêu.</p>
+                  <p><strong>Tác động đến phát triển kỹ năng:</strong> Lạm dụng AI dẫn đến ảo tưởng về năng lực và thoái hóa kỹ năng tư duy phản biện.</p>
+                  <p><strong>Quan điểm cá nhân:</strong> "AI không phải mối đe dọa cho đạo đức học thuật — chính sự lười biếng trí tuệ của con người mới là nguyên nhân gây ra khủng hoảng."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Topic 4 -->
+          <div class="project-topic">
+            <div class="topic-number">4</div>
+            <div class="topic-content">
+              <h4>Bộ nguyên tắc cá nhân khi sử dụng AI</h4>
+              <p>5 nguyên tắc vàng để sử dụng AI một cách có trách nhiệm trong học thuật.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Principles Section -->
+      <div class="bow-divider">
+        <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z"/>
+          <ellipse cx="32" cy="22" rx="4" ry="5"/>
+        </svg>
+      </div>
+
+      <div class="section-header">
+        <span class="section-label">Kim chỉ nam</span>
+        <h2 class="section-title">5 Nguyên Tắc Vàng Khi Sử Dụng AI</h2>
+      </div>
+
+      <div class="principles-grid stagger-children fade-in">
+        <div class="principle-item">
+          <div class="principle-number">1</div>
+          <div>
+            <div class="principle-title">Động não trước khi mở máy</div>
+            <div class="principle-text">Tự suy nghĩ, vạch ra ý tưởng cốt lõi bằng chính chất xám của mình trước khi nhờ AI hỗ trợ.</div>
+          </div>
+        </div>
+        <div class="principle-item">
+          <div class="principle-number">2</div>
+          <div>
+            <div class="principle-title">Học cách làm, đừng xin bài giải</div>
+            <div class="principle-text">Dùng AI như người tiền bối để giải thích khái niệm, gợi ý góc nhìn — không phải máy viết bài hộ.</div>
+          </div>
+        </div>
+        <div class="principle-item">
+          <div class="principle-number">3</div>
+          <div>
+            <div class="principle-title">Đừng tin sái cổ, phải check lại</div>
+            <div class="principle-text">Coi mọi thông tin AI đưa ra chỉ là giả thuyết tham khảo. Luôn đối chiếu với sách giáo khoa và tài liệu chuẩn.</div>
+          </div>
+        </div>
+        <div class="principle-item">
+          <div class="principle-number">4</div>
+          <div>
+            <div class="principle-title">Bản thân luôn là người chốt hạ</div>
+            <div class="principle-text">Chu trình 3 bước: Tự nghĩ ý tưởng → AI trau chuốt → Mình đánh giá, chịu trách nhiệm hoàn toàn.</div>
+          </div>
+        </div>
+        <div class="principle-item">
+          <div class="principle-number">5</div>
+          <div>
+            <div class="principle-title">Dùng thì nhận, không mập mờ</div>
+            <div class="principle-text">Sòng phẳng và trung thực: ghi nhận rõ ràng những phần có sự hỗ trợ của AI.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUẦN 7 -->
+  <section class="section section-alt" id="tuan7">
+    <div class="container">
+      <div class="project-card fade-in">
+        <div class="project-card-header">
+          <span class="project-week">Tuần 7</span>
+          <h2 class="project-title">AI trong Y tế — Quản lý Tăng Huyết Áp</h2>
+        </div>
+        <div class="project-card-body">
+
+          <!-- Topic 1 -->
+          <div class="project-topic">
+            <div class="topic-number">1</div>
+            <div class="topic-content">
+              <h4>Sơ đồ quy trình quản lý bệnh nhân tăng huyết áp</h4>
+              <p>Flowchart mô tả các bước từ đăng ký, theo dõi, đến tư vấn từ bác sĩ cho bệnh nhân tại xã miền núi.</p>
+            </div>
+          </div>
+
+          <!-- Topic 2 -->
+          <div class="project-topic">
+            <div class="topic-number">2</div>
+            <div class="topic-content">
+              <h4>Vai trò của AI trong từng bước quy trình</h4>
+              <p>Phân tích chi tiết 5 bước ứng dụng AI: thu thập dữ liệu, phân loại bệnh nhân, sàng lọc, hỗ trợ bác sĩ, giám sát tuân thủ.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <p><strong>Bước 1 — Thu thập dữ liệu tự động:</strong> Thiết bị đo thông minh kết hợp IoT tự động đẩy dữ liệu về trung tâm y tế qua Bluetooth/mạng di động.</p>
+                  <p><strong>Bước 2 — Phân loại & xử lý khẩn cấp:</strong> Hệ thống Clinical Data Analytics phân loại: Khẩn cấp (HA>180/110), Tăng HA (HA>135/85), Theo dõi (HA bình thường). AI kích hoạt cảnh báo tương ứng.</p>
+                  <p><strong>Bước 3&4 — Sàng lọc & hỗ trợ bác sĩ:</strong> Mô hình dự báo lâm sàng tự động vẽ biểu đồ dao động HA và cảnh báo sớm nguy cơ tim mạch.</p>
+                  <p><strong>Bước 5 — Giám sát tuân thủ:</strong> Trợ lý ảo AI gọi điện bằng tiếng địa phương để nhắc uống thuốc và lịch tái khám.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Topic 3 -->
+          <div class="project-topic">
+            <div class="topic-number">3</div>
+            <div class="topic-content">
+              <h4>Thách thức triển khai tại Việt Nam & Giải pháp</h4>
+              <p>Phân tích rào cản kỹ thuật số, hoài nghi thuật toán và đề xuất giải pháp khả thi.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <p><strong>Thách thức 1 — Rào cản kỹ thuật số:</strong> Hạ tầng mạng không đồng đều, người dân tộc thiểu số lớn tuổi khó thao tác công nghệ và bất đồng ngôn ngữ.</p>
+                  <p><strong>Giải pháp:</strong> Giao thiết bị cho nhân viên y tế thôn bản, lập trình Chatbot bằng tiếng dân tộc địa phương (Mông, Tày, Thái...).</p>
+                  <p><strong>Thách thức 2 — Hoài nghi thuật toán:</strong> Thiếu tin tưởng vào quyết định phân luồng của AI. Khung pháp lý cho AI trong y tế còn chưa hoàn thiện.</p>
+                  <p><strong>Giải pháp:</strong> AI chỉ đóng vai trò "gợi ý" và "kích hoạt cảnh báo". Nhân viên y tế luôn phải xác nhận trước khi ra quyết định. AI tuyệt đối không thay thế y lệnh bác sĩ.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand">Ngọc Hoan</div>
+    <p class="footer-text">Digital Portfolio — Nhập môn Công nghệ số & Ứng dụng AI</p>
+    <p class="footer-text">Lớp VNU1001_E252023 &bull; Ngành Dược học &bull; ĐH Y Dược — ĐHQGHN</p>
+    <p class="footer-text" style="margin-top: 12px;">Made with <span class="footer-heart">&#10084;</span> and a sprinkle of coquette</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Toggle detail sections
+    function toggleDetail(btn) {
+      const detail = btn.nextElementSibling;
+      detail.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.textContent = '';
+      btn.innerHTML = detail.classList.contains('open')
+        ? 'Thu gọn <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>'
+        : 'Xem chi tiết <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>';
+    }
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.fade-in, .stagger-children').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
