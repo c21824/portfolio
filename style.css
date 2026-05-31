@@ -708,6 +708,11 @@ body::before {
   font-weight: 700;
 }
 
+.topic-content {
+  flex: 1;
+  min-width: 0;
+}
+
 .topic-content h4 {
   font-family: var(--font-heading);
   font-size: 1.05rem;
@@ -731,7 +736,7 @@ body::before {
 }
 
 .topic-detail.open {
-  max-height: 2000px;
+  max-height: 15000px;
   padding: 16px 0 0;
 }
 
@@ -763,6 +768,72 @@ body::before {
   line-height: 1.7;
 }
 
+.topic-detail-content h5 {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--plum);
+  margin: 10px 0 8px;
+}
+
+.topic-detail-content pre {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(244, 160, 181, 0.22);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin: 10px 0 14px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.topic-detail-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.86rem;
+}
+
+.infographic-figure {
+  margin: 14px 0 0;
+}
+
+.infographic-image {
+  display: block;
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  margin: 10px auto 6px;
+  border-radius: var(--radius-md);
+  border: 3px solid var(--white);
+  box-shadow: var(--shadow-card);
+}
+
+.infographic-caption {
+  text-align: center;
+  color: var(--muted-rose);
+  font-size: 0.88rem;
+}
+
+.flowchart-figure {
+  margin: 14px 0 0;
+}
+
+.flowchart-svg {
+  display: block;
+  width: 100%;
+  max-width: 980px;
+  height: auto;
+  margin: 12px auto 6px;
+  border-radius: var(--radius-md);
+  border: 3px solid var(--white);
+  box-shadow: var(--shadow-card);
+}
+
+.flowchart-caption {
+  text-align: center;
+  color: var(--muted-rose);
+  font-size: 0.88rem;
+}
+
 .topic-toggle {
   display: inline-flex;
   align-items: center;
@@ -791,6 +862,48 @@ body::before {
 
 .topic-toggle.open svg {
   transform: rotate(180deg);
+}
+
+/* ============================================
+   DATA TABLE
+   ============================================ */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.data-table th, .data-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(244, 160, 181, 0.15);
+  font-size: 0.92rem;
+  color: var(--plum);
+  line-height: 1.6;
+}
+
+.data-table th {
+  background: linear-gradient(135deg, var(--pink-light), rgba(232, 213, 224, 0.4));
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--pink-deep);
+}
+
+.data-table tbody tr:hover {
+  background: rgba(244, 160, 181, 0.05);
+}
+
+.data-table td strong {
+  color: var(--pink-primary);
 }
 
 /* ============================================
