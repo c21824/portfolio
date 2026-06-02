@@ -47,6 +47,15 @@ html {
   font-size: 16px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast; /* Crisp scaling for Safari/Chrome */
+  image-rendering: crisp-edges;               /* Crisp scaling for Firefox */
+  transform: translateZ(0);                    /* Enable GPU hardware acceleration to avoid scaling blur */
+  backface-visibility: hidden;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--plum);
