@@ -363,6 +363,8 @@
               </button>
               <div class="topic-detail">
                 <div class="topic-detail-content">
+                  <h5>Chủ đề (ngành Dược học):</h5>
+                  <p>Ứng dụng của HPLC trong phân tích dịch sinh học.</p>
                   <h5>Các nguồn thông tin đã tìm kiếm:</h5>
                   <ul>
                     <li>Cơ sở dữ liệu học thuật: Google Scholar, Microsoft Academic, CSDL của thư viện trường</li>
@@ -370,6 +372,7 @@
                     <li>Sách chuyên khảo (Textbooks &amp; Monographs)</li>
                     <li>Các nguồn mở trên internet (Open-access websites)</li>
                   </ul>
+                  <p style="margin-top: 12px; font-size: 0.9rem; color: var(--text-muted, #64748b);">Đánh giá mỗi tài liệu theo 5 tiêu chí: tác giả, cơ quan xuất bản, phương pháp nghiên cứu, trích dẫn, tính cập nhật.</p>
                 </div>
               </div>
             </div>
@@ -378,6 +381,92 @@
           <!-- Topic 2 -->
           <div class="project-topic">
             <div class="topic-number">2</div>
+            <div class="topic-content">
+              <h4>Quá trình tìm kiếm &amp; Chiến lược tra cứu</h4>
+              <p>Thử nghiệm các phương thức và cú pháp tìm kiếm trên Google Scholar / công cụ học thuật, so sánh số lượng và chất lượng kết quả.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <div class="table-responsive">
+                    <table class="data-table">
+                      <thead>
+                        <tr>
+                          <th>Phương thức / Cú pháp</th>
+                          <th>Ví dụ minh họa</th>
+                          <th>Số lượng kết quả</th>
+                          <th>Chất lượng</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Từ khóa đơn giản</strong></td>
+                          <td><code>HPLC applications in biological fluid analysis</code></td>
+                          <td>Rất lớn (hàng triệu)</td>
+                          <td>Độ nhiễu cao — nhiều blog, bài thương mại, kết quả lệch chủ đề</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Cụm từ trong ngoặc kép</strong></td>
+                          <td><code>"HPLC applications in biological fluid analysis"</code></td>
+                          <td>Giảm đáng kể, khu trú sâu</td>
+                          <td>Độ chính xác cao — tiêu đề/chương trùng khớp chủ đề</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Toán tử kết hợp</strong></td>
+                          <td><code>intitle:"HPLC" AND ("biological fluid" OR "plasma") NOT "industrial"</code></td>
+                          <td>Vừa phải, chọn lọc cao</td>
+                          <td>Rất cao — đi thẳng mục tiêu lâm sàng, loại HPLC công nghiệp/thực phẩm</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Giới hạn website</strong></td>
+                          <td><code>"HPLC" "biological fluid" site:ncbi.nlm.nih.gov</code></td>
+                          <td>Giới hạn trong site đích</td>
+                          <td>Độ tin cậy cực cao — loại trang thương mại, diễn đàn không chính thống</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Tìm theo loại file</strong></td>
+                          <td><code>"HPLC" "biological fluid analysis" filetype:pdf</code></td>
+                          <td>Ít hơn web thường nhưng tập trung</td>
+                          <td>Phù hợp thu thập tài liệu học thuật — tải full-text để đọc và trích dẫn</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <h5 style="margin-top: 20px;">Minh họa kết quả tìm kiếm:</h5>
+                  <figure class="infographic-figure">
+                    <img class="infographic-image" src="assets/week2/search-1.png" alt="Tìm kiếm từ khóa đơn giản HPLC">
+                    <figcaption style="font-size: 0.85rem; margin-top: 6px; text-align: center;">Từ khóa đơn giản — số lượng lớn, nhiễu cao</figcaption>
+                  </figure>
+                  <figure class="infographic-figure">
+                    <img class="infographic-image" src="assets/week2/search-2.png" alt="Tìm kiếm cụm từ trong ngoặc kép" style="margin-top: 12px;">
+                    <figcaption style="font-size: 0.85rem; margin-top: 6px; text-align: center;">Cụm từ trong ngoặc kép — kết quả chính xác hơn</figcaption>
+                  </figure>
+                  <figure class="infographic-figure">
+                    <img class="infographic-image" src="assets/week2/search-3.png" alt="Tìm kiếm với toán tử AND OR NOT intitle" style="margin-top: 12px;">
+                    <figcaption style="font-size: 0.85rem; margin-top: 6px; text-align: center;">Toán tử AND, OR, NOT, intitle — lọc theo mục tiêu nghiên cứu</figcaption>
+                  </figure>
+                  <figure class="infographic-figure">
+                    <img class="infographic-image" src="assets/week2/search-4.png" alt="Tìm kiếm giới hạn site NCBI" style="margin-top: 12px;">
+                    <figcaption style="font-size: 0.85rem; margin-top: 6px; text-align: center;">Lệnh site: — giới hạn trang uy tín (NCBI)</figcaption>
+                  </figure>
+                  <figure class="infographic-figure">
+                    <img class="infographic-image" src="assets/week2/search-5.png" alt="Tìm kiếm filetype pdf" style="margin-top: 12px;">
+                    <figcaption style="font-size: 0.85rem; margin-top: 6px; text-align: center;">filetype:pdf — tập trung bài báo/sách full-text</figcaption>
+                  </figure>
+
+                  <h5 style="margin-top: 22px;">Chiến lược tìm kiếm có hệ thống:</h5>
+                  <p style="font-size: 0.92rem; line-height: 1.65;">Ban đầu dùng từ khóa đơn giản để làm quen thuật ngữ và ma trận mẫu thường gặp. Sau đó dùng ngoặc kép <code>""</code> cho cụm cốt lõi, kết hợp <code>AND</code>, <code>OR</code>, <code>NOT</code> để mở rộng và loại nhiễu. Dùng <code>intitle:</code> để ưu tiên bài có chủ đề trong tiêu đề, kết hợp <code>site:</code> (NCBI, Springer…) để lọc bỏ khoảng 90% trang thương mại hoặc chưa bình duyệt. Cuối cùng thêm <code>filetype:pdf</code> để tải nhanh bản full-text phục vụ đọc và trích dẫn.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Topic 3 -->
+          <div class="project-topic">
+            <div class="topic-number">3</div>
             <div class="topic-content">
               <h4>Các tài liệu tìm kiếm được &amp; Đánh giá độ tin cậy</h4>
               <p>Phân tích từng tài liệu dựa trên 5 tiêu chí: tác giả, cơ quan xuất bản, phương pháp nghiên cứu, trích dẫn, tính cập nhật.</p>
@@ -427,7 +516,7 @@
                     <p><strong>Bài báo:</strong> "Analysis of human cerebrospinal fluid monoamines and their cofactors by HPLC" (Marta Batllori, 2017)</p>
                     <ul>
                       <li><strong>Tác giả:</strong> Marta Batllori, Rafael Artuch và cộng sự thuộc Bệnh viện Sant Joan de Déu (Tây Ban Nha) và UCL (Vương quốc Anh) — chuyên gia nghiên cứu hóa sinh lâm sàng. <strong>Độ tin cậy: Rất cao.</strong></li>
-                      <li><strong>Cơ quan xuất bản:</strong> Đăng bản gốc trên tạp chí danh tiếng <em>Nature Protocols</em>. <strong>Độ tin cậy: Tuyệt đối.</strong></li>
+                      <li><strong>Cơ quan xuất bản:</strong> Đăng bản gốc trên tạp chí danh tiếng <em>Nature Protocols</em>; bản toàn văn được tác giả chia sẻ trên ResearchGate. <strong>Độ tin cậy: Tuyệt đối.</strong></li>
                       <li><strong>Phương pháp:</strong> Thiết lập quy trình chuẩn (Protocol), mô tả chi tiết từng bước từ tiền xử lý mẫu dịch não tủy đến phân tích HPLC-ED/FD.</li>
                       <li><strong>Trích dẫn:</strong> 31 tài liệu tham khảo khoa học. Số lần trích dẫn: 37.</li>
                       <li><strong>Tính cập nhật:</strong> Xuất bản tháng 11/2017 — ở mức khá.</li>
@@ -489,7 +578,7 @@
                       <li><strong>Cơ quan xuất bản:</strong> Tập đoàn Elsevier — nhà xuất bản học thuật uy tín bậc nhất thế giới. <strong>Độ tin cậy: Tuyệt đối.</strong></li>
                       <li><strong>Phương pháp:</strong> Phân tích lý thuyết chuyên sâu kết hợp thu thập dữ liệu về hóa pháp y, độc chất học.</li>
                       <li><strong>Trích dẫn:</strong> Hơn 160 nguồn tham khảo.</li>
-                      <li><strong>Tính cập nhật:</strong> Xuất bản năm 2008 — khá cũ, nhưng kiến thức nền tảng về cấu tạo cột vẫn giữ nguyên giá trị cốt lõi.</li>
+                      <li><strong>Tính cập nhật:</strong> Xuất bản năm 2008 — khá cũ, nhưng kiến thức nền tảng về cấu tạo cột và các loại đầu dò vẫn giữ nguyên giá trị cốt lõi.</li>
                     </ul>
                   </div>
 
@@ -533,9 +622,9 @@
             </div>
           </div>
 
-          <!-- Topic 3 -->
+          <!-- Topic 4 -->
           <div class="project-topic">
-            <div class="topic-number">3</div>
+            <div class="topic-number">4</div>
             <div class="topic-content">
               <h4>Bảng tổng hợp đánh giá &amp; xếp hạng độ tin cậy</h4>
               <p>So sánh tổng quan 4 loại nguồn thông tin theo các tiêu chí khoa học.</p>
@@ -607,9 +696,9 @@
                       </ul>
                       <p style="margin: 0 0 4px; font-size: 0.88rem;"><strong>Nhược điểm:</strong></p>
                       <ul style="margin: 0; font-size: 0.88rem; padding-left: 16px;">
-                        <li>Không phải tất cả đều chất lượng cao</li>
-                        <li>Cần kỹ năng lọc để chọn bài phù hợp</li>
-                        <li>Một số phải trả phí để đọc full</li>
+                        <li>Không phải tất cả đều chất lượng cao (có bài chưa bình duyệt)</li>
+                        <li>Cần kỹ năng lọc để chọn bài phù hợp với nhu cầu</li>
+                        <li>Một số phải trả phí để đọc full-text</li>
                       </ul>
                     </div>
                     <div style="background: rgba(20,184,166,0.07); border-radius: 10px; padding: 14px;">
@@ -1018,22 +1107,186 @@
           <h2 class="project-title">Ứng dụng AI trong Sáng tạo Nội dung &amp; Thiết kế</h2>
         </div>
         <div class="project-card-body">
-          <div class="infographic-container" style="text-align: center; padding: 10px 0;">
-            <p class="section-desc" style="max-width: 720px; margin: 0 auto 28px; color: var(--muted-rose); font-size: 0.95rem; line-height: 1.8; font-style: italic;">
-              Sản phẩm Infographic truyền thông hoàn chỉnh kết hợp sức mạnh từ ba công cụ AI chuyên biệt: <strong>Google Gemini</strong> (lên dàn ý &amp; tối ưu hóa nội dung), <strong>DALL-E 3</strong> (sáng tạo hình ảnh minh họa độc quyền) và <strong>Canva AI</strong> (thiết kế, phân bổ bố cục &amp; hoàn thiện thẩm mỹ).
-            </p>
-            
-            <div class="infographic-wrapper" style="position: relative; display: inline-block; max-width: 100%; border-radius: var(--radius-md); overflow: hidden; border: 4px solid var(--white); box-shadow: var(--shadow-soft); transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);">
-              <img class="infographic-image" src="image copy 31.png" alt="Infographic sản phẩm - Sử dụng AI có trách nhiệm trong học thuật" style="display: block; width: 100%; max-width: 760px; height: auto; margin: 0; border: none; border-radius: 0; box-shadow: none;">
-              <div class="infographic-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(244, 160, 181, 0.05) 0%, rgba(74, 44, 61, 0.15) 100%); pointer-events: none;"></div>
-            </div>
 
-            <figcaption class="infographic-caption" style="margin-top: 18px; color: var(--pink-deep); font-weight: 600; font-size: 0.98rem; display: flex; align-items: center; justify-content: center; gap: 6px;">
-              <svg viewBox="0 0 64 40" style="width: 20px; height: 12px; fill: currentColor;"><path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z"/><ellipse cx="32" cy="22" rx="4" ry="5"/></svg>
-              Sử dụng AI có trách nhiệm trong học tập &amp; Nghiên cứu khoa học
-              <svg viewBox="0 0 64 40" style="width: 20px; height: 12px; fill: currentColor; transform: scaleX(-1);"><path d="M32 20c-6-8-18-18-28-14s-6 18 0 20 22-2 28-6c6 4 18 10 28 6s10-16 0-20-22 6-28 14z"/><ellipse cx="32" cy="22" rx="4" ry="5"/></svg>
-            </figcaption>
+          <!-- Topic 1 -->
+          <div class="project-topic">
+            <div class="topic-number">1</div>
+            <div class="topic-content">
+              <h4>Công cụ AI tạo văn bản: Google Gemini</h4>
+              <p>Dùng Gemini để lập dàn ý, hệ thống hóa nội dung và viết mô tả cho infographic giới thiệu ẩm thực Huế.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <p>Ví dụ prompt: đóng vai người Huế, giới thiệu 4 món đặc sản (nguyên liệu, cách làm, hương vị, địa chỉ quán).</p>
+                  <figure class="infographic-figure">
+                    <img class="infographic-image" src="image copy 19.png" alt="Gemini — prompt và phản hồi món 1">
+                    <img class="infographic-image" src="image copy 20.png" alt="Gemini — tiếp tục nội dung món ăn" style="margin-top: 10px;">
+                    <img class="infographic-image" src="image copy 21.png" alt="Gemini — mô tả món ăn Huế" style="margin-top: 10px;">
+                    <img class="infographic-image" src="image copy 22.png" alt="Gemini — hoàn thiện danh sách món" style="margin-top: 10px;">
+                    <img class="infographic-image" src="image copy 23.png" alt="Gemini — tổng hợp nội dung infographic" style="margin-top: 10px;">
+                  </figure>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Topic 2 -->
+          <div class="project-topic">
+            <div class="topic-number">2</div>
+            <div class="topic-content">
+              <h4>Công cụ AI tạo hình ảnh: DALL·E 3</h4>
+              <p>Tạo ảnh minh họa từng món ăn và yếu tố trực quan phục vụ thiết kế infographic.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <p>Ví dụ: &ldquo;Hãy tạo một bức ảnh về bún bò Huế&rdquo; — DALL·E sinh ảnh chi tiết, có thể chỉnh sửa và refine nhiều lần.</p>
+                  <figure class="infographic-figure">
+                    <img class="infographic-image" src="image copy 24.png" alt="DALL-E — ảnh bún bò Huế">
+                    <img class="infographic-image" src="image copy 25.png" alt="DALL-E — minh họa món ăn Huế" style="margin-top: 10px;">
+                    <img class="infographic-image" src="image copy 26.png" alt="DALL-E — ảnh cơm hến" style="margin-top: 10px;">
+                    <img class="infographic-image" src="image copy 27.png" alt="DALL-E — ảnh bánh bèo nậm lọc" style="margin-top: 10px;">
+                    <img class="infographic-image" src="image copy 28.png" alt="DALL-E — ảnh chè bột lọc heo quay" style="margin-top: 10px;">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Topic 3 -->
+          <div class="project-topic">
+            <div class="topic-number">3</div>
+            <div class="topic-content">
+              <h4>Công cụ AI hỗ trợ thiết kế: Canva AI</h4>
+              <p>Ghép nội dung từ Gemini và hình ảnh từ DALL·E thành bố cục infographic thống nhất.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <p>Canva AI gợi ý nhiều phương án layout; chọn phong cách phù hợp mục tiêu quảng bá du lịch ẩm thực Huế.</p>
+                  <figure class="infographic-figure">
+                    <img class="infographic-image" src="image copy 29.png" alt="Canva AI — các phương án infographic">
+                    <img class="infographic-image" src="image copy 30.png" alt="Canva AI — chỉnh sửa bố cục infographic" style="margin-top: 10px;">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Topic 4 -->
+          <div class="project-topic">
+            <div class="topic-number">4</div>
+            <div class="topic-content">
+              <h4>Infographic sản phẩm: Khám phá xứ Huế mộng mơ</h4>
+              <p>Sản phẩm hoàn chỉnh giới thiệu 4 món: Bún bò Huế, Cơm hến, Bánh bèo – Nậm – Lọc, Chè bột lọc heo quay.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <p>Quy trình: <strong>Gemini</strong> (cấu trúc nội dung) &rarr; <strong>DALL·E</strong> (tài nguyên hình ảnh) &rarr; <strong>Canva</strong> (lắp ráp + tối ưu thẩm mỹ).</p>
+                  <figure class="infographic-figure">
+                    <img class="infographic-image" src="image copy 31.png" alt="Infographic hoàn chỉnh — Khám phá xứ Huế mộng mơ">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Topic 5 -->
+          <div class="project-topic">
+            <div class="topic-number">5</div>
+            <div class="topic-content">
+              <h4>So sánh 3 công cụ AI</h4>
+              <p>Phân tích điểm mạnh, điểm yếu và vai trò của Gemini, DALL·E 3 và Canva AI trong một dự án sáng tạo.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <div style="display: grid; grid-template-columns: 1fr; gap: 14px;">
+                    <div style="background: rgba(168,85,247,0.07); border-radius: 10px; padding: 14px; border: 1px solid rgba(168,85,247,0.2);">
+                      <p style="margin: 0 0 8px; font-weight: 600; color: #a855f7;">Google Gemini</p>
+                      <p style="margin: 0 0 6px; font-size: 0.88rem;"><strong>Điểm mạnh:</strong> Xử lý thông tin học thuật/logic tốt; tổng hợp, diễn giải, tạo outline; kết hợp đa dạng dữ liệu.</p>
+                      <p style="margin: 0 0 6px; font-size: 0.88rem;"><strong>Vai trò:</strong> Lập dàn ý &rarr; hệ thống hóa &rarr; viết ngắn gọn (không tạo sản phẩm hình ảnh cuối).</p>
+                      <p style="margin: 0; font-size: 0.88rem;"><strong>Điểm yếu:</strong> Không mạnh trực quan; chất lượng phụ thuộc prompt.</p>
+                    </div>
+                    <div style="background: rgba(20,184,166,0.07); border-radius: 10px; padding: 14px; border: 1px solid rgba(20,184,166,0.25);">
+                      <p style="margin: 0 0 8px; font-weight: 600; color: #14b8a6;">DALL·E 3</p>
+                      <p style="margin: 0 0 6px; font-size: 0.88rem;"><strong>Điểm mạnh:</strong> Hiểu prompt tốt; ảnh chi tiết, refine được; minh họa khái niệm, biểu tượng hóa ý tưởng.</p>
+                      <p style="margin: 0 0 6px; font-size: 0.88rem;"><strong>Vai trò:</strong> Sơ đồ minh họa, hình tượng trưng (không thay ảnh thật).</p>
+                      <p style="margin: 0; font-size: 0.88rem;"><strong>Điểm yếu:</strong> Không phải công cụ thiết kế hoàn chỉnh; dễ lệch phong cách; dùng sai mục tiêu (làm cả infographic) thì kém hiệu quả.</p>
+                    </div>
+                    <div style="background: rgba(244,160,181,0.12); border-radius: 10px; padding: 14px; border: 1px solid rgba(244,160,181,0.35);">
+                      <p style="margin: 0 0 8px; font-weight: 600; color: var(--pink-deep);">Canva AI</p>
+                      <p style="margin: 0 0 6px; font-size: 0.88rem;"><strong>Điểm mạnh:</strong> Template + layout + AI; bố cục, thẩm mỹ, đồng nhất; thao tác kéo-thả dễ cho sinh viên.</p>
+                      <p style="margin: 0 0 6px; font-size: 0.88rem;"><strong>Vai trò:</strong> Ghép nội dung + hình ảnh &rarr; sản phẩm hoàn chỉnh.</p>
+                      <p style="margin: 0; font-size: 0.88rem;"><strong>Điểm yếu:</strong> Phụ thuộc template; AI Canva chưa sâu về nội dung, ít tạo ý tưởng mới.</p>
+                    </div>
+                  </div>
+                  <p style="margin-top: 16px; font-size: 0.92rem; line-height: 1.65;"><strong>Kết luận:</strong> Không công cụ nào đủ một mình tạo sản phẩm cuối hoàn chỉnh — cần phối hợp đa công cụ để tăng hiệu suất.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Topic 6 -->
+          <div class="project-topic">
+            <div class="topic-number">6</div>
+            <div class="topic-content">
+              <h4>Cách AI thay đổi quy trình sáng tạo</h4>
+              <p>So sánh quy trình trước và sau khi tích hợp bộ ba công cụ AI.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <ul>
+                    <li><strong>Trước AI:</strong> Nghĩ nội dung &rarr; vẽ &rarr; chỉnh &rarr; làm lại — tốn thời gian, phụ thuộc kỹ năng cá nhân.</li>
+                    <li><strong>Sau AI:</strong> Gemini (cấu trúc) &rarr; DALL·E (hình ảnh) &rarr; Canva (lắp ráp + tối ưu) — tăng tốc x2–x5, giảm rào cản thiết kế, dễ thử nhiều phiên bản.</li>
+                    <li><strong>Bài học:</strong> AI tách việc thành các phần chuyên biệt; sức mạnh thật nằm ở cách phối hợp thành một hệ thống sáng tạo.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Topic 7 -->
+          <div class="project-topic">
+            <div class="topic-number">7</div>
+            <div class="topic-content">
+              <h4>Vai trò của AI &amp; Vấn đề đạo đức</h4>
+              <p>Phân tích AI như tác nhân đồng sáng tạo và các rủi ro khi dùng trong học thuật, đặc biệt ngành Dược.</p>
+              <button class="topic-toggle" onclick="toggleDetail(this)">
+                Xem chi tiết
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="topic-detail">
+                <div class="topic-detail-content">
+                  <p style="font-size: 0.92rem; line-height: 1.7;">AI không chỉ là công cụ hỗ trợ mà đang trở thành tác nhân đồng sáng tạo, chuyển quy trình từ tuyến tính (nghiên cứu &rarr; ý tưởng &rarr; thiết kế &rarr; hoàn thiện) sang mô-đun, lặp lại (iterative): tạo nhanh nhiều phiên bản, kiểm tra và tối ưu liên tục.</p>
+                  <p style="font-size: 0.92rem; line-height: 1.7;">Trọng tâm dịch từ kỹ năng thực hiện sang tư duy và điều phối. Sinh viên Dược có thể làm infographic cơ chế thuốc bằng AI mà không vẽ giỏi, nhưng vẫn phải hiểu nội dung, kiểm chứng và thiết kế thông điệp — AI đòi hỏi tư duy phản biện cao hơn.</p>
+                  <h5 style="margin-top: 18px;">Ba vấn đề đạo đức chính:</h5>
+                  <ul style="font-size: 0.9rem; line-height: 1.65;">
+                    <li><strong>Quyền sở hữu trí tuệ:</strong> Ảnh/nội dung AI có thể chịu ảnh hưởng dữ liệu huấn luyện không minh bạch.</li>
+                    <li><strong>Tính xác thực:</strong> AI có thể đúng hình thức nhưng sai bản chất — nguy hiểm trong khoa học sức khỏe.</li>
+                    <li><strong>Sự phụ thuộc:</strong> Chỉ sao chép output làm suy giảm tư duy độc lập.</li>
+                  </ul>
+                  <p style="font-size: 0.92rem; line-height: 1.7; margin-top: 12px;">Cách tiếp cận hợp lý: dùng AI như công cụ khuếch đại tư duy; con người giữ vai trò kiểm soát, đánh giá và chịu trách nhiệm cuối cùng.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
