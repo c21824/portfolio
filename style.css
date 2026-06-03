@@ -820,6 +820,135 @@ body::before {
   font-size: 0.88rem;
 }
 
+/* Week 6 — ethics analysis */
+.ethics-pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 18px 0 8px;
+}
+
+.ethics-pillar-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(244, 160, 181, 0.28);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+}
+
+.ethics-pillar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.ethics-pillar-card h6 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--pink-deep);
+  margin-bottom: 8px;
+}
+
+.ethics-pillar-card p {
+  font-size: 0.9rem;
+  color: var(--plum);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.ethics-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 16px 0 6px;
+}
+
+@media (max-width: 640px) {
+  .ethics-compare {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ethics-compare-col {
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  border: 1px solid rgba(244, 160, 181, 0.25);
+}
+
+.ethics-compare-col--ok {
+  background: linear-gradient(135deg, rgba(244, 160, 181, 0.12), rgba(255, 248, 240, 0.9));
+  border-left: 4px solid var(--pink-primary);
+}
+
+.ethics-compare-col--bad {
+  background: linear-gradient(135deg, rgba(74, 44, 61, 0.06), rgba(255, 248, 240, 0.85));
+  border-left: 4px solid var(--plum);
+}
+
+.ethics-compare-col strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: var(--plum);
+}
+
+.ethics-compare-col ul {
+  margin: 0 0 0 18px;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--plum);
+}
+
+.ethics-compare-col li {
+  margin-bottom: 6px;
+}
+
+.ethics-quote {
+  margin: 18px 0 4px;
+  padding: 18px 22px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(120deg, rgba(244, 160, 181, 0.14), rgba(232, 213, 224, 0.35));
+  border: 1px dashed rgba(212, 117, 139, 0.45);
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--plum);
+  text-align: center;
+}
+
+.infographic-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 4px solid var(--white);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.infographic-wrapper:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.infographic-wrapper .infographic-image {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 760px;
+}
+
+.infographic-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(244, 160, 181, 0.05) 0%, rgba(74, 44, 61, 0.12) 100%);
+  pointer-events: none;
+}
+
 .flowchart-figure {
   margin: 14px 0 0;
 }

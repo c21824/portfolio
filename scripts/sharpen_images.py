@@ -36,6 +36,7 @@ def main() -> None:
         "image.png",
         "assets/week2/*.png",
         "assets/week5/*.png",
+        "assets/week6/*.*",
     ]
     files: list[Path] = []
     for pat in patterns:
