@@ -904,6 +904,106 @@ body::before {
   margin-bottom: 6px;
 }
 
+/* Khung báo cáo tuần — Mục tiêu / Quy trình / Sản phẩm / Tham khảo (theo LMS.docx) */
+.week-report {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.week-report__block {
+  border-radius: var(--radius-md);
+  padding: 18px 20px 16px;
+  border: 1px solid rgba(244, 160, 181, 0.22);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(244, 160, 181, 0.05));
+}
+
+.week-report__block--goal {
+  border-left: 4px solid #a855f7;
+}
+
+.week-report__block--process {
+  border-left: 4px solid #14b8a6;
+}
+
+.week-report__block--output {
+  border-left: 4px solid var(--pink-primary);
+}
+
+.week-report__block--refs {
+  border-left: 4px solid #6366f1;
+}
+
+.week-report__heading {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--pink-deep);
+  letter-spacing: 0.01em;
+}
+
+.week-report__body p,
+.week-report__body ul,
+.week-report__body ol {
+  margin: 0 0 8px;
+  font-size: 0.92rem;
+  line-height: 1.68;
+  color: var(--plum);
+}
+
+.week-report__body ul,
+.week-report__body ol {
+  padding-left: 1.25rem;
+}
+
+.week-report__body li:last-child {
+  margin-bottom: 0;
+}
+
+.week-report__lead {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-muted, #64748b);
+  font-style: italic;
+}
+
+.week-report__process-list {
+  margin: 10px 0 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--plum);
+}
+
+.week-report__process-list li {
+  margin-bottom: 6px;
+}
+
+.week-detail-heading {
+  margin: 4px 0 18px;
+  padding-bottom: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--plum);
+  border-bottom: 1px dashed rgba(244, 160, 181, 0.35);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.prompt-block {
+  margin: 14px 0;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  background: rgba(15, 23, 42, 0.04);
+  border-left: 3px solid var(--pink-primary);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  font-family: ui-monospace, Consolas, monospace;
+}
+
 .ethics-quote {
   margin: 18px 0 4px;
   padding: 18px 22px;

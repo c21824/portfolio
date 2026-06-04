@@ -1,0 +1,43 @@
+WEEK SUMMARY FROM DOCX
+
+Week 1: 3080 chars, 26 images
+  images: image40.png, image13.png, image11.png, image38.png, image59.png, image67.png, image17.png, image19.png, image68.png, image51.png, image2.png, image55.png, image63.png, image42.png, image35.png
+
+Week 2: 17699 chars, 5 images
+  images: image53.png, image47.png, image28.png, image29.png, image15.png
+  - 1. Chủ đề liên quan đến ngành học (ngành dược học)
+  - 2. Thực hiện tìm kiếm thông tin trên
+  - 3. Quá trình tìm kiếm:
+  - 4. Các nguồn tài liệu tìm kiếm được và đánh giá độ tin cậy
+  - 4. Bảng tổng hợp các nguồn thông tin với đánh giá và xếp hạng độ tin cậy
+  - 5. Phân tích ưu điểm và nhược điểm của các nguồn thông tin
+
+Week 3: 7260 chars, 21 images
+  images: image3.png, image77.png, image6.png, image79.png, image31.png, image12.png, image7.png, image44.png, image80.png, image1.png, image58.png, image30.png, image69.png, image82.png, image14.png
+  - 1.     Tác vụ: Tóm tắt một bài đọc/tài liệu học thuật
+  - 1.1. Prompt cơ bản
+  - 1.2. Prompt cải tiến
+  - 1.3. Prompt nâng cao
+  - 2.     Tác vụ: Giải thích một khái niệm phức tạp
+  - 2.1.  Prompt cơ bản
+  - 2.2. Prompt cải tiến
+  - 2.3. Prompt nâng cao
+  - 3.     Tác vụ: Tạo bộ câu hỏi ôn tập cho một chủ đề
+  - 3.1. Prompt cơ bản
+  - 3.2. Prompt cải tiến
+  - 3.3. Prompt nâng cao
+  - 4.     Thử nghiệm các prompt với một công cụ AI và so sánh kết quả.
+  - 4.1. Tác vụ: Tóm tắt một bài đọc/tài liệu học thuật
+  - 4.2. Tác vụ: Giải thích một khái niệm phức tạp
+  - 4.3. Tác vụ: Tạo bộ câu hỏi ôn tập cho một chủ đề
+  - 5.     Phân tích hiệu quả prompt:
+  - 6.     Tổng hợp các nguyên tắc và mẹo viết prompt hiệu quả dựa trên kết quả thử nghiệm.
+
+Week 4: 3980 chars, 17 images
+  images: image32.png, image65.png, image39.png, image34.png, image54.png, image21.png, image8.png, image10.png, image60.png, image24.png, image33.png, image73.png, image70.png, image57.png, image50.png
+
+Week 5: 4861 chars, 13 images
+  images: image27.png, image66.png, image52.png, image49.png, image36.png, image64.png, image72.png, image48.png, image25.png, image62.png, image16.png, image43.png, image61.png
+
+Week 6: 13000 chars, 1 images
+  images: image74.jpg

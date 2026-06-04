@@ -1,0 +1,89 @@
+
+============================================================
+TUAN 1 (0 chars)
+============================================================
+  (total numbered lines: 0)
+
+
+============================================================
+TUAN 2 (0 chars)
+============================================================
+  (total numbered lines: 0)
+
+
+============================================================
+TUAN 3 (0 chars)
+============================================================
+  (total numbered lines: 0)
+
+
+============================================================
+TUAN 4 (0 chars)
+============================================================
+  (total numbered lines: 0)
+
+
+============================================================
+TUAN 5 (0 chars)
+============================================================
+  (total numbered lines: 0)
+
+
+============================================================
+TUAN 6 (50688 chars)
+============================================================
+  1. Tác vụ: Tóm tắt một bài đọc/tài liệu học thuật
+  2. Tác vụ: Giải thích một khái niệm phức tạp
+  3. Tác vụ: Tạo bộ câu hỏi ôn tập cho một chủ đề
+  4. Thử nghiệm các prompt với một công cụ AI và so sánh kết quả.
+  5. Phân tích hiệu quả prompt:
+  6. Tổng hợp các nguyên tắc và mẹo viết prompt hiệu quả dựa trên kết quả thử nghiệm.
+  1. Chủ đề liên quan đến ngành học (ngành dược học)
+  2. Thực hiện tìm kiếm thông tin trên
+  3. Quá trình tìm kiếm:
+  4. Các nguồn tài liệu tìm kiếm được và đánh giá độ tin cậy
+  4. Bảng tổng hợp các nguồn thông tin với đánh giá và xếp hạng độ tin cậy
+  5. Phân tích ưu điểm và nhược điểm của các nguồn thông tin
+  (total numbered lines: 12)
+tuần 6
+Mục tiêu: 
+Phát triển kỹ năng sử dụng trí tuệ nhân tạo (AI) một cách có trách nhiệm, hiệu quả và tuân thủ các nguyên tắc đạo đức trong học tập và nghiên cứu. Thông qua việc tìm hiểu các cơ hội, lợi ích cũng như những hạn chế và rủi ro của AI, nâng cao nhận thức về việc sử dụng công nghệ một cách minh bạch, trung thực và phù hợp với chuẩn mực học thuật 
+Quy trình thực hiện chi tiết: 
+Tìm hiểu về chính sách của Đại học Quốc gia Hà Nội về sử dụng AI trong học tập và nghiên cứu: 
+Chính sách hoặc định hướng của trường về AI
+Khác với nhiều cơ sở giáo dục còn đang e dè, ĐHQGHN đã chủ động ban hành các quy định và chương trình hành động rất cụ thể nhằm tích hợp và quản lý công nghệ này
+Từ năm học 2025 - 2026, ĐHQGHN chính thức đưa học phần &quot;Nhập môn công nghệ số và ứng dụng trí tuệ nhân tạo&quot; (Mã học phần: VNU1001, 3 tín chỉ) thành môn học bắt buộc trực tuyến 100% cho toàn bộ sinh viên chính quy năm nhất của tất cả các trường thành viên (Trường ĐH Công nghệ, Trường ĐH Kinh tế, Trường ĐH Luật,...). Văn bản ban hành học phần này nêu rõ mục tiêu: Trang bị năng lực số đồng thời giáo dục sâu sắc về liêm chính học thuật (academic integrity) và đạo đức số. 
+Theo các hội nghị chuyên đề về liêm chính học thuật trong thời đại AI do các trường thành viên ĐHQGHN (như Trường Đại học Luật - ĐHQGHN) tổ chức, nhà trường thống nhất nguyên tắc cốt lõi: Trách nhiệm học thuật luôn thuộc về con người. AI không thể và không được coi là tác giả hay đồng tác giả của bất kỳ công trình, bài tập lớn hay đề tài nghiên cứu nào. 
+Hành vi vi phạm: Việc sinh viên sử dụng AI để tạo ra sản phẩm (văn bản, mã nguồn, nghiên cứu) sau đó sao chép nguyên bản mà không thực hiện kiểm chứng, không có tư duy phản biện cá nhân và đặc biệt là không công khai, khai báo minh bạch việc sử dụng AI sẽ bị khép vào hành vi vi phạm nghiêm trọng chuẩn mực đạo đức học thuật và quy chế chống đạo văn của ĐHQGHN. 
+Nhận định và ý kiến cá nhân:
+Chính sách của ĐHQGHN thể hiện tầm nhìn mang tính đột phá khi biến AI từ mối đe dọa thành một môn học bắt buộc nhằm định hình tư duy cho sinh viên ngay từ năm nhất. Đây là bước đi đúng đắn, tiệm cận với khung năng lực số của quốc tế.
+Tuy nhiên, thách thức lớn nhất hiện nay nằm ở sự đồng bộ trong khâu chấm điểm và đánh giá của giảng viên. Do AI có khả năng biến đổi ngôn ngữ và mã nguồn rất tinh vi, các công cụ kiểm tra đạo văn truyền thống thường bất lực. Vì vậy, tôi kiến nghị ĐHQGHN cần sớm ban hành một &quot;Khung hướng dẫn chấm bài kỷ nguyên số&quot; chi tiết dành riêng cho giảng viên, trong đó giảm tỷ trọng điểm của các bài luận/báo cáo lý thuyết thuần túy chép tay/đánh máy, thay vào đó tăng tỷ lệ điểm đánh giá quá trình và bảo vệ đề tài trực tiếp. Sinh viên phải có khả năng giải thích và bảo vệ được từng luận điểm trước hội đồng thì mới chứng minh được sự liêm chính.
+Mô tả quá trình sử dụng AI trong học tập: 
+Các công cụ AI đã sử dụng: 
+Trong quá trình học tập và thực hiện các tiểu luận chuyên ngành Dược học, tôi đã phối hợp sử dụng hai nhóm công cụ AI để tối ưu hóa hiệu suất: 
+Gemini, Chat GPT: Sử dụng để cấu trúc hóa ý tưởng, tóm tắt các lý thuyết dược lý phức tạp, dịch thuật ngữ chuyên ngành từ các tài liệu nước ngoài và tối ưu hóa ngôn từ báo cáo.
+Perplexity AI: Sử dụng để tìm kiếm các bằng chứng y học trực tiếp từ các cơ sở dữ liệu y sinh uy tín như PubMed, ScienceDirect nhằm trích xuất các nghiên cứu lâm sàng có nguồn gốc rõ ràng. 
+Các prompt đã sử dụng: 
+Để viết bài tiểu luận: “Phân tích tương tác thuốc giữa Clopidogrel và Omeprazole”, t
+
+... [47188 more chars] ...
+
+txt.
+Nhấp chuột phải vào tệp DiChuyen.txt -&gt; chọn Cut (hoặc chọn tệp rồi nhấn Ctrl + X).
+Nhấp đúp vào thư mục TaiLieu, nhấp chuột phải vào khoảng trống -&gt; chọn Paste (hoặc nhấn Ctrl + V). Tệp gốc đã biến mất khỏi vị trí cũ và chỉ còn ở vị trí mới.
+Xóa tệp tin:
+ Trong thư mục TaiLieu, nhấp chuột phải vào tệp GhiChuQuanTrong.txt -&gt; chọn Delete. Tệp sẽ được chuyển vào Thùng rác (Recycle Bin).
+Xóa vĩnh viễn:
+ Chọn tệp DiChuyen.txt, nhấn giữ phím Shift và nhấn phím Delete. Một cảnh báo sẽ hiện ra. Nếu đồng ý, tệp sẽ bị xóa vĩnh viễn mà không qua Thùng rác.
+Khôi phục từ Thùng rác (Tùy chọn):
+ Tìm biểu tượng Recycle Bin trên màn hình nền, nhấp đúp để mở. Tìm tệp GhiChuQuanTrong.txt đã xóa, nhấp chuột phải vào nó và chọn Restore. Tệp sẽ quay trở lại vị trí ban đầu.
+Kết quả: Cấu trúc thư mục và quy tắc đặt tên tệp 
+QUY TẮC ĐẶT TÊN TỆP TIN VÀ THƯ MỤC 
+Quy tắc 1: Tên thư mục và tệp tin sử dụng tiếng Việt không dấu, chữ cái đầu viết hoa nối liền hoặc phân tách bằng dấu gạch dưới (
+_
+), loại bỏ hoàn toàn khoảng trắng và ký tự đặc biệt.
+Quy tắc 2: Định dạng tên tệp sản phẩm nộp bài được chuẩn hóa đồng bộ theo cấu trúc diện rộng trước
+Quy tắc 3: Chia tách rõ ràng giữa thư mục chứa tài liệu học tập/bài giảng gốc và thư mục chứa sản phẩm bài tập thực hành cá nhân để tránh nhầm lẫn dữ liệu.
+Lý do thiết kế:
+ Giúp quản lý dữ liệu theo tư duy chức năng ( không bị lẫn lộn giữa bài giảng của thầy cô và bài tập của chính mình
+), tăng tính thẩm mỹ trực quan, trông Gọn gàng và chuyên nghiệp .
