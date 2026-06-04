@@ -1579,10 +1579,6 @@ body::before {
   margin-bottom: 4px;
 }
 
-.footer-heart {
-  color: var(--pink-primary);
-}
-
 /* ============================================
    ANIMATIONS
    ============================================ */
