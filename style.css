@@ -810,8 +810,12 @@ body::before {
   border-radius: var(--radius-md);
   border: 3px solid var(--white);
   box-shadow: var(--shadow-card);
-  image-rendering: high-quality;
-  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+}
+
+/* Infographic dọc / thành phẩm — hiển thị rộng hơn, tận dụng ảnh 2x */
+.infographic-image--final {
+  max-width: min(920px, 100%);
 }
 
 .infographic-caption {

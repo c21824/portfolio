@@ -1,0 +1,124 @@
+IMAGE AUDIT: LMS.docx vs projects.html
+
+
+=== TUAN 1: OK ===
+  DOCX total images: 26
+  HTML total images: 26
+  DOCX images by section:
+    [26] intro
+  HTML topics (6):
+    - Mở File Explorer & Truy cập ổ đĩa
+    - Tạo và Quản lý Thư mục
+    - Tạo và Quản lý Tệp tin
+    - Sao chép và Di chuyển tệp tin
+    - Xóa và Khôi phục tệp tin
+    - Quy tắc đặt tên tệp tin và thư mục
+  HTML image paths (first 8):
+    OK image copy 32.png
+    OK image copy 33.png
+    OK image copy 34.png
+    OK image copy 35.png
+    OK image copy 36.png
+    OK image copy 40.png
+    OK image copy 37.png
+    OK image copy 38.png
+    ... +18 more
+
+=== TUAN 2: OK ===
+  DOCX total images: 5
+  HTML total images: 5
+  DOCX images by section:
+    [5] 3. Quá trình tìm kiếm:
+  HTML topics (4):
+    - Chủ đề tìm kiếm &amp; Các nguồn đã khai thác
+    - Quá trình tìm kiếm &amp; Chiến lược tra cứu
+    - Các tài liệu tìm kiếm được &amp; Đánh giá độ tin cậy
+    - Bảng tổng hợp đánh giá &amp; xếp hạng độ tin cậy
+  HTML image paths (first 8):
+    OK assets/week2/search-1.png
+    OK assets/week2/search-2.png
+    OK assets/week2/search-3.png
+    OK assets/week2/search-4.png
+    OK assets/week2/search-5.png
+
+=== TUAN 3: OK ===
+  DOCX total images: 21
+  HTML total images: 21
+  DOCX images by section:
+    [7] 4.1. Tác vụ: Tóm tắt một bài đọc/tài liệu học thuật
+    [6] 4.2. Tác vụ: Giải thích một khái niệm phức tạp
+    [8] 4.3. Tác vụ: Tạo bộ câu hỏi ôn tập cho một chủ đề
+  HTML topics (5):
+    - Tác vụ 1: Tóm tắt một bài đọc/tài liệu học thuật
+    - Tác vụ 2: Giải thích một khái niệm phức tạp
+    - Tác vụ 3: Tạo bộ câu hỏi ôn tập cho một chủ đề
+    - Phân tích hiệu quả Prompt
+    - Tổng hợp nguyên tắc &amp; mẹo viết prompt hiệu quả
+  HTML image paths (first 8):
+    OK image copy 57.png
+    OK image copy 58.png
+    OK image copy 59.png
+    OK image copy 60.png
+    OK image copy 61.png
+    OK image copy 62.png
+    OK image copy 63.png
+    OK image copy 64.png
+    ... +13 more
+
+=== TUAN 4: OK ===
+  DOCX total images: 17
+  HTML total images: 17
+  DOCX images by section:
+    [17] intro
+  HTML topics (3):
+    - Các công cụ đã sử dụng
+    - Phân tích hiệu quả đối với công việc cá nhân
+    - Thách thức gặp phải và Cách giải quyết
+  HTML image paths (first 8):
+    OK image copy 2.png
+    OK image copy 3.png
+    OK image copy 4.png
+    OK image copy 5.png
+    OK image copy 6.png
+    OK image copy 7.png
+    OK image copy 8.png
+    OK image copy 9.png
+    ... +9 more
+
+=== TUAN 5: OK ===
+  DOCX total images: 13
+  HTML total images: 13
+  DOCX images by section:
+    [13] intro
+  HTML topics (7):
+    - Công cụ AI tạo văn bản: Google Gemini
+    - Công cụ AI tạo hình ảnh: DALL·E 3
+    - Công cụ AI hỗ trợ thiết kế: Canva AI
+    - Infographic sản phẩm: Khám phá xứ Huế mộng mơ
+    - So sánh 3 công cụ AI
+    - Cách AI thay đổi quy trình sáng tạo
+    - Vai trò của AI &amp; Vấn đề đạo đức
+  HTML image paths (first 8):
+    OK image copy 19.png
+    OK image copy 20.png
+    OK image copy 21.png
+    OK image copy 22.png
+    OK image copy 23.png
+    OK image copy 24.png
+    OK image copy 25.png
+    OK image copy 26.png
+    ... +5 more
+
+=== TUAN 6: OK ===
+  DOCX total images: 1
+  HTML total images: 1
+  DOCX images by section:
+    [1] intro
+  HTML topics (5):
+    - Chính sách ĐHQGHN về sử dụng AI trong học tập &amp; nghiên cứu
+    - Quy trình sử dụng AI trong học tập (tiểu luận Dược)
+    - Phân tích các vấn đề đạo đức khi sử dụng AI trong học thuật
+    - Bộ nguyên tắc cá nhân khi sử dụng AI
+    - Infographic: Sử dụng AI có trách nhiệm trong học thuật
+  HTML image paths (first 8):
+    OK assets/week6/infographic-ai-ethics.jpg
