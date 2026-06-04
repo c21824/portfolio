@@ -908,31 +908,36 @@ body::before {
 .week-report {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
   margin-bottom: 28px;
 }
 
-.week-report__block {
+.project-card-body .week-report__block {
   border-radius: var(--radius-md);
   padding: 18px 20px 16px;
-  border: 1px solid rgba(244, 160, 181, 0.22);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(244, 160, 181, 0.05));
+  border: 1px solid rgba(244, 160, 181, 0.42);
+  background: var(--white);
+  box-shadow: var(--shadow-card);
 }
 
-.week-report__block--goal {
-  border-left: 4px solid #a855f7;
+.project-card-body .week-report__block--goal {
+  border-left: 5px solid #a855f7;
+  background: linear-gradient(105deg, rgba(168, 85, 247, 0.12) 0%, var(--white) 42%);
 }
 
-.week-report__block--process {
-  border-left: 4px solid #14b8a6;
+.project-card-body .week-report__block--process {
+  border-left: 5px solid #14b8a6;
+  background: linear-gradient(105deg, rgba(20, 184, 166, 0.1) 0%, var(--white) 42%);
 }
 
-.week-report__block--output {
-  border-left: 4px solid var(--pink-primary);
+.project-card-body .week-report__block--output {
+  border-left: 5px solid var(--pink-deep);
+  background: linear-gradient(105deg, rgba(244, 160, 181, 0.14) 0%, var(--white) 42%);
 }
 
-.week-report__block--refs {
-  border-left: 4px solid #6366f1;
+.project-card-body .week-report__block--refs {
+  border-left: 5px solid #6366f1;
+  background: linear-gradient(105deg, rgba(99, 102, 241, 0.1) 0%, var(--white) 42%);
 }
 
 .week-report__heading {
